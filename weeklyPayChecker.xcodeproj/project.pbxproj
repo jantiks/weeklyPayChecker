@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		98646F5025CC0F43005B535F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F4F25CC0F43005B535F /* AppDelegate.swift */; };
 		98646F5225CC0F43005B535F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F5125CC0F43005B535F /* SceneDelegate.swift */; };
-		98646F5425CC0F43005B535F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F5325CC0F43005B535F /* ViewController.swift */; };
+		98646F5425CC0F43005B535F /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F5325CC0F43005B535F /* StartController.swift */; };
 		98646F5725CC0F43005B535F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98646F5525CC0F43005B535F /* Main.storyboard */; };
 		98646F5925CC0F4A005B535F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98646F5825CC0F4A005B535F /* Assets.xcassets */; };
 		98646F5C25CC0F4A005B535F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98646F5A25CC0F4A005B535F /* LaunchScreen.storyboard */; };
+		98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */; };
+		98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6825CC138F005B535F /* TriangleTesterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98646F4C25CC0F43005B535F /* weeklyPayChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weeklyPayChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98646F4F25CC0F43005B535F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98646F5125CC0F43005B535F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98646F5325CC0F43005B535F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98646F5325CC0F43005B535F /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		98646F5625CC0F43005B535F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98646F5825CC0F4A005B535F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98646F5B25CC0F4A005B535F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98646F5D25CC0F4A005B535F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPayCheckerController.swift; sourceTree = "<group>"; };
+		98646F6825CC138F005B535F /* TriangleTesterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTesterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		98646F4E25CC0F43005B535F /* weeklyPayChecker */ = {
 			isa = PBXGroup;
 			children = (
-				98646F4F25CC0F43005B535F /* AppDelegate.swift */,
-				98646F5125CC0F43005B535F /* SceneDelegate.swift */,
-				98646F5325CC0F43005B535F /* ViewController.swift */,
+				98646F6525CC0FD0005B535F /* Models */,
+				98646F6425CC0FC8005B535F /* Controllers */,
+				98646F6325CC0FAD005B535F /* Supporting files */,
 				98646F5525CC0F43005B535F /* Main.storyboard */,
-				98646F5825CC0F4A005B535F /* Assets.xcassets */,
-				98646F5A25CC0F4A005B535F /* LaunchScreen.storyboard */,
 				98646F5D25CC0F4A005B535F /* Info.plist */,
 			);
 			path = weeklyPayChecker;
+			sourceTree = "<group>";
+		};
+		98646F6325CC0FAD005B535F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				98646F4F25CC0F43005B535F /* AppDelegate.swift */,
+				98646F5125CC0F43005B535F /* SceneDelegate.swift */,
+				98646F5825CC0F4A005B535F /* Assets.xcassets */,
+				98646F5A25CC0F4A005B535F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		98646F6425CC0FC8005B535F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98646F5325CC0F43005B535F /* StartController.swift */,
+				98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */,
+				98646F6825CC138F005B535F /* TriangleTesterController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98646F6525CC0FD0005B535F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98646F5425CC0F43005B535F /* ViewController.swift in Sources */,
+				98646F5425CC0F43005B535F /* StartController.swift in Sources */,
 				98646F5025CC0F43005B535F /* AppDelegate.swift in Sources */,
+				98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */,
+				98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */,
 				98646F5225CC0F43005B535F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
