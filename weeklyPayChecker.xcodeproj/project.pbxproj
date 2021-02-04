@@ -15,7 +15,8 @@
 		98646F5C25CC0F4A005B535F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98646F5A25CC0F4A005B535F /* LaunchScreen.storyboard */; };
 		98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */; };
 		98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6825CC138F005B535F /* TriangleTesterController.swift */; };
-		98646F6B25CC27A0005B535F /* payCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6A25CC27A0005B535F /* payCounter.swift */; };
+		98646F6B25CC27A0005B535F /* PayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6A25CC27A0005B535F /* PayCounter.swift */; };
+		98FA477325CC54EF00CC36E6 /* TriangleChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FA477225CC54EF00CC36E6 /* TriangleChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		98646F5D25CC0F4A005B535F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPayCheckerController.swift; sourceTree = "<group>"; };
 		98646F6825CC138F005B535F /* TriangleTesterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTesterController.swift; sourceTree = "<group>"; };
-		98646F6A25CC27A0005B535F /* payCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payCounter.swift; sourceTree = "<group>"; };
+		98646F6A25CC27A0005B535F /* PayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCounter.swift; sourceTree = "<group>"; };
+		98FA477225CC54EF00CC36E6 /* TriangleChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,8 @@
 			children = (
 				98646F6525CC0FD0005B535F /* Models */,
 				98646F6425CC0FC8005B535F /* Controllers */,
-				98646F6325CC0FAD005B535F /* Supporting files */,
 				98646F5525CC0F43005B535F /* Main.storyboard */,
+				98646F6325CC0FAD005B535F /* Supporting files */,
 				98646F5D25CC0F4A005B535F /* Info.plist */,
 			);
 			path = weeklyPayChecker;
@@ -95,7 +97,8 @@
 		98646F6525CC0FD0005B535F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				98646F6A25CC27A0005B535F /* payCounter.swift */,
+				98646F6A25CC27A0005B535F /* PayCounter.swift */,
+				98FA477225CC54EF00CC36E6 /* TriangleChecker.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,10 +176,11 @@
 			files = (
 				98646F5425CC0F43005B535F /* StartController.swift in Sources */,
 				98646F5025CC0F43005B535F /* AppDelegate.swift in Sources */,
+				98FA477325CC54EF00CC36E6 /* TriangleChecker.swift in Sources */,
 				98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */,
 				98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */,
 				98646F5225CC0F43005B535F /* SceneDelegate.swift in Sources */,
-				98646F6B25CC27A0005B535F /* payCounter.swift in Sources */,
+				98646F6B25CC27A0005B535F /* PayCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

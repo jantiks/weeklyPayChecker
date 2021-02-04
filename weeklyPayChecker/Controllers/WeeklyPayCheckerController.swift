@@ -17,7 +17,7 @@ class WeeklyPayCheckerController: UIViewController {
     @IBOutlet weak var calculateButton: UIButton!
     
     // making counter object from payCounter class
-    let counter = payCounter()
+    let counter = PayCounter()
 
 
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class WeeklyPayCheckerController: UIViewController {
         let overTimeStr = overTimeTF.text ?? ""
         let wageStr = wageTF.text ?? ""
         
-        if (inputsAreValid(workingHoursStr, overTimeStr, wageStr)) {
+        if (isValid(workingHoursStr, overTimeStr, wageStr)) {
             let workingHours = Double(workingHoursStr)!
             let overTime = Double(overTimeStr)!
             let wage = Double(wageStr)!
@@ -51,8 +51,8 @@ class WeeklyPayCheckerController: UIViewController {
     }
     
     
-    //checks users inputs
-    private func inputsAreValid(_ workingHours: String, _ overTime: String, _ wage: String) -> Bool {
+    //validation of user input
+    private func isValid(_ workingHours: String, _ overTime: String, _ wage: String) -> Bool {
         if isNotEmpty(workingHours, overTime, wage) && inputsAreNumbers(workingHours, overTime, wage) {
             return true
         }
