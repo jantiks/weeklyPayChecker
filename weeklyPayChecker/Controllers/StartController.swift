@@ -10,8 +10,16 @@ import UIKit
 
 class StartController: UIViewController {
 
+    //IBoutlets
+    @IBOutlet var buttons: [UIButton]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // changing buttons corners
+        for button in buttons {
+            button.layer.cornerRadius = 10
+        }
     }
     @IBAction func weeklyPayCheckerTapped(_ sender: UIButton) {
         // getting WeeklyPayCheckerController from storyboard

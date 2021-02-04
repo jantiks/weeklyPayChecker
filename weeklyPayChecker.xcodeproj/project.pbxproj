@@ -15,6 +15,7 @@
 		98646F5C25CC0F4A005B535F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98646F5A25CC0F4A005B535F /* LaunchScreen.storyboard */; };
 		98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */; };
 		98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6825CC138F005B535F /* TriangleTesterController.swift */; };
+		98646F6B25CC27A0005B535F /* payCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98646F6A25CC27A0005B535F /* payCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		98646F5D25CC0F4A005B535F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98646F6625CC12AB005B535F /* WeeklyPayCheckerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPayCheckerController.swift; sourceTree = "<group>"; };
 		98646F6825CC138F005B535F /* TriangleTesterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleTesterController.swift; sourceTree = "<group>"; };
+		98646F6A25CC27A0005B535F /* payCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		98646F6525CC0FD0005B535F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				98646F6A25CC27A0005B535F /* payCounter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				98646F6925CC138F005B535F /* TriangleTesterController.swift in Sources */,
 				98646F6725CC12AB005B535F /* WeeklyPayCheckerController.swift in Sources */,
 				98646F5225CC0F43005B535F /* SceneDelegate.swift in Sources */,
+				98646F6B25CC27A0005B535F /* payCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
