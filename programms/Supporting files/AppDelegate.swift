@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  weeklyPayChecker
 //
-//  Created by Tigran on 2/4/21.
-//  Copyright © 2021 Tigran. All rights reserved.
 //
 
 import UIKit

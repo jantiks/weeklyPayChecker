@@ -1,11 +1,8 @@
 //
 //  TriangleChecker.swift
-//  weeklyPayChecker
 //
 //  this class returns the the type of triangle.
 //
-//  Created by Tigran on 2/4/21.
-//  Copyright © 2021 Tigran. All rights reserved.
 //
 
 import Foundation

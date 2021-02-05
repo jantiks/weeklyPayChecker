@@ -1,9 +1,6 @@
 //
-//  ViewController.swift
-//  weeklyPayChecker
+//  StartController.swift
 //
-//  Created by Tigran on 2/4/21.
-//  Copyright © 2021 Tigran. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +9,7 @@ class StartController: UIViewController {
 
     //IBoutlets
     @IBOutlet var buttons: [UIButton]!
-    
+    var ch = RadioStreamer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +20,7 @@ class StartController: UIViewController {
     }
     @IBAction func weeklyPayCheckerTapped(_ sender: UIButton) {
         // getting WeeklyPayCheckerController from storyboard
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "WeeklyPay") as? WeeklyPayCheckerController else { return }
-        
-        //opening WeeklyPayCheckerController
-        navigationController?.pushViewController(vc, animated: true)
+        ch.playStreaming()
     }
     
     @IBAction func triangleTesterTapped(_ sender: UIButton) {
